@@ -432,7 +432,7 @@
 	fill: #fff;
 }
 .left-side:hover svg {
-    fill: #000;
+    fill: #fff;
 }
 .right-side {
 	width: calc(100% - 120px);
