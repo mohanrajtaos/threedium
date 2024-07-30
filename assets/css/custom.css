@@ -84,8 +84,9 @@
 	/* =============== */
 	/* Slider Clients Logo  */
 	.LogosContainer__root--1rBir img {
-		height: 32px;
-		width: auto;
+	    width: 120px;
+		height: auto;
+    	margin-right: 24px;
 	}
 
 	/* Custom Logo Adjust  */
@@ -212,7 +213,7 @@
 		cursor: pointer;
 	}
 
-	.LinkBtn__root--2etCz {
+	.three-btn {
 		display: inline-block;
 		padding: 10px 34px;
 		font-size: 16px;
@@ -225,9 +226,21 @@
 		user-select: none;
 		text-align: center;
 	}
-	.LinkBtn__root--2etCz:hover{
+	.three-btn:hover{
 		background: linear-gradient(111.02deg, #ce010f 0%, #f17d03 100%);
 		color: #fff;
+	}
+
+	.ptf-nav--offcanvas .sf-menu>li>.three-btn {
+		color: #FFF;
+		padding: 16px 18px;
+	}
+	.ptf-nav--offcanvas .sf-menu>li>.three-btn:hover{
+		color: #fff;
+	}
+
+	a.ptf-offcanvas-menu-toggle {
+		font-size: 32px;
 	}
 
 	/* Mouse CSS  */
@@ -362,7 +375,9 @@
 
 	.ptf-nav--offcanvas .sf-menu>li>a,
 	.ptf-nav--slide .sf-menu>li>a {
-		font-size: 25px;
+		font-size: 18px;
+		line-height: 0.6;
+		font-weight: 500;
 	}
 	.ptf-site-overlay {
     	background-color: hsl(0deg 0% 100% / 80%);
