@@ -613,6 +613,24 @@
 			document.querySelector('.popup').classList.add('hidden');
 		}, 300); // Wait for the transition to finish before hiding the element
 	}
+
+	(function() {
+	// Function to check if the device is mobile
+	function isMobileDevice() {
+		// Regular expression to check for common mobile devices
+		return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+	}
+
+	// URL to redirect mobile users to
+	var mobileRedirectUrl = 'https://threedium.io/';
+
+	// Check if the current user is on a mobile device
+	if (isMobileDevice()) {
+		// Redirect to the mobile version URL
+		window.location.href = mobileRedirectUrl;
+	}
+	})();
+
 	</script>
 
 
